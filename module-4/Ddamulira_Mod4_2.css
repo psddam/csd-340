@@ -1,0 +1,55 @@
+/*
+    Name: Peter Ddamulira
+    Date: August 28, 2026
+    Assignment: 4.2 - Build a Web Page Exercise, Part 4
+*/
+#container {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(79, 54, 116, 1);
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+}
+
+#image-gallery > div {
+    border: 1px solid rgba(214, 168, 0, 1);
+}
+
+h3 {
+    text-align: center;
+    color: rgba(79, 54, 116, 1);
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(79, 54, 116, 0.8);
+}
+
+#landing-page {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: underline;
+}
