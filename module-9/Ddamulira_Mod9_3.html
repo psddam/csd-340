@@ -1,0 +1,100 @@
+<!--
+    Name: Peter Ddamulira
+    Date: September 23, 2026
+    Assignment: 9.3 JavaScript Exercise, Part 1
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSD 340 Module 9.3 assignment">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bellevue University, web development">
+    <meta name="author" content="Peter Ddamulira">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+        var wordOne = "technology";
+        var wordTwo = "family";
+        var wordThree = "traveling";
+        var wordFour = "programming";
+    </script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <p>
+            My name is Peter Ddamulira, and I have always been interested in
+            <span id="wordOne">__________</span>.
+            Learning how computers and software work has encouraged me to continue
+            developing my skills and education. Technology gives me an opportunity
+            to solve problems, create new ideas, and continue learning.
+        </p>
+
+        <p>
+            One of the most important parts of my life is
+            <span id="wordTwo">__________</span>.
+            The people closest to me have always encouraged me to work hard and
+            continue pursuing my goals. Their support motivates me to keep moving
+            forward even when something is challenging.
+        </p>
+
+        <p>
+            Outside of school and work, I enjoy
+            <span id="wordThree">__________</span>
+            and experiencing different places. I also enjoy learning new things
+            and working on technology projects. These experiences allow me to
+            relax while also giving me new ideas and perspectives.
+        </p>
+
+        <p>
+            As I continue my education, one of my main goals is to become stronger
+            in <span id="wordFour">__________</span>.
+            Each course gives me another opportunity to practice what I have
+            learned and apply those skills to real projects. I look forward to
+            continuing to improve as a software developer.
+        </p>
+
+        <p>
+            <button type="button"
+                    onclick="document.getElementById('wordOne').innerHTML = wordOne">
+                technology
+            </button>
+
+            <button type="button"
+                    onclick="document.getElementById('wordTwo').innerHTML = wordTwo">
+                family
+            </button>
+
+            <button type="button"
+                    onclick="document.getElementById('wordThree').innerHTML = wordThree">
+                traveling
+            </button>
+
+            <button type="button"
+                    onclick="document.getElementById('wordFour').innerHTML = wordFour">
+                programming
+            </button>
+        </p>
+
+        <hr>
+
+        <address>
+            <p>
+                <a href="https://www.bellevue.edu/">Bellevue University</a>
+            </p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+
+    </div>
+
+</body>
+
+</html>
