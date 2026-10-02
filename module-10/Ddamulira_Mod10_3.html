@@ -1,0 +1,190 @@
+<!--
+    Name: Peter Ddamulira
+    Date: October 1, 2026
+    Assignment: 10.3 JavaScript Exercise, Part 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f5f0e6;
+            color: #17324d;
+        }
+
+        #container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .instructions {
+            margin-bottom: 35px;
+            color: #4d5b66;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .image-card {
+            background-color: white;
+            width: 420px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .image-card h2 {
+            color: #17324d;
+            font-weight: 400;
+        }
+
+        .image-card p {
+            color: #4d5b66;
+        }
+
+        .reset-button {
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: #17324d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .reset-button:hover {
+            background-color: #244a6b;
+        }
+
+        .back-link {
+            margin-top: 30px;
+        }
+
+        .back-link a {
+            color: #17324d;
+        }
+    </style>
+
+    <script>
+        function changeFirstImage() {
+            document.getElementById("firstImage").src =
+                "images/20251226_093503(1).jpg";
+
+            document.getElementById("firstCaption").innerHTML =
+                "The image changed after you clicked it!";
+        }
+
+        function changeSecondImage() {
+            document.getElementById("secondImage").src =
+                "images/20260509_190552.jpg";
+
+            document.getElementById("secondCaption").innerHTML =
+                "JavaScript changed this image using an onclick event!";
+        }
+
+        function resetImages() {
+            document.getElementById("firstImage").src =
+                "images/20240809_140507.jpg";
+
+            document.getElementById("secondImage").src =
+                "images/20260412_142647.jpg";
+
+            document.getElementById("firstCaption").innerHTML =
+                "Click the image to change it.";
+
+            document.getElementById("secondCaption").innerHTML =
+                "Click the image to change it.";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+        <p class="instructions">
+            Click each image below to change what is displayed.
+        </p>
+
+        <div class="image-gallery">
+
+            <div class="image-card">
+                <h2>Image One</h2>
+
+                <img
+                    id="firstImage"
+                    src="images/20240809_140507.jpg"
+                    alt="Personal photo one"
+                    onclick="changeFirstImage()"
+                >
+
+                <p id="firstCaption">
+                    Click the image to change it.
+                </p>
+            </div>
+
+            <div class="image-card">
+                <h2>Image Two</h2>
+
+                <img
+                    id="secondImage"
+                    src="images/20260412_142647.jpg"
+                    alt="Personal photo two"
+                    onclick="changeSecondImage()"
+                >
+
+                <p id="secondCaption">
+                    Click the image to change it.
+                </p>
+            </div>
+
+        </div>
+
+        <button
+            class="reset-button"
+            type="button"
+            onclick="resetImages()"
+        >
+            Reset Images
+        </button>
+
+        <p class="back-link">
+            <a href="../index.html">Back to Landing Page</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
